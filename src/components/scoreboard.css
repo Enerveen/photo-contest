@@ -1,0 +1,54 @@
+.scoreboard {
+  color: white;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  background-color: black;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.scoreboard main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+}
+
+.score-elem {
+  position: relative;
+  margin-bottom: 5vw;
+  font-size: 2vw;
+  width: 100%;
+}
+
+.score-elem-meter {
+  border-radius: 1vw;
+  font-weight: 400;
+  background: linear-gradient(45deg, #a2c1d3, #e43cc3);
+  color: black;
+  width: 70vw;
+  height: 3vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1vw;
+}
+
+.score-elem img {
+  position: absolute;
+  bottom: 1.5vw;
+  height: 7vw;
+  right: 5vw;
+  object-fit: contain;
+}
+
+.score-elem > div {
+  display: flex;
+}
