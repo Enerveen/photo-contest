@@ -3,6 +3,7 @@
 }
 
 .battle {
+  margin-top: 5vh;
   display: flex;
   background: linear-gradient(45deg, #a2c1d3, #e43cc3);
   height: 95vh;
