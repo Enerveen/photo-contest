@@ -13,7 +13,7 @@ export default class Scoreboard extends Component {
   }
 
   componentDidMount() {
-    fetch('https://fathomless-everglades-09463.herokuapp.com/battle/score')
+    fetch(process.env.REACT_APP_ADDR + '/score')
       .then((res) => res.json())
       .then(
         (result) => {

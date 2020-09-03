@@ -5,7 +5,6 @@ import Battle from './components/Battle';
 import Info from './components/Info';
 import Nav from './components/Nav';
 import Scoreboard from './components/Scoreboard';
-
 function App() {
   return (
     <BrowserRouter>

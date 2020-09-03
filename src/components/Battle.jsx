@@ -5,18 +5,16 @@ const Battle = () => {
   useEffect(() => initGirls());
   function initGirls(event) {
     if (event) {
-      let addr = 'https://fathomless-everglades-09463.herokuapp.com/battle/' + event.target.alt;
+      let addr = process.env.REACT_APP_ADDR + event.target.alt;
       fetch(addr, { method: 'PATCH' });
-      console.log(event.target.alt);
     }
 
-    fetch('https://fathomless-everglades-09463.herokuapp.com/battle')
+    fetch(process.env.REACT_APP_ADDR)
       .then((data) => data.json())
       .then((data) => round(data))
       .catch((err) => console.error(err));
 
     function round(data) {
-      console.log(data);
       document.getElementById('image1').src = data[0].link;
       document.getElementById('image1').alt = data[0].fullName;
       document.getElementById('image2').src = data[1].link;
