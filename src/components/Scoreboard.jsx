@@ -40,7 +40,7 @@ export default class Scoreboard extends Component {
     } else {
       return (
         <div className='scoreboard'>
-          <h1>Scoreboard</h1>
+          <h1>Топ-50</h1>
           <main>
             {items.map((item, index) => (
               <ScoreElem key={index} i={index} prop={item} />

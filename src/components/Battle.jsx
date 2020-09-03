@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './battle.css';
 import vs from '../img/vs.png';
-import ph1 from '../img/photo1.jpg';
 const Battle = () => {
   useEffect(() => initGirls());
   function initGirls(event) {
@@ -31,12 +30,12 @@ const Battle = () => {
     <div className='battle'>
       <img src={vs} alt='' />
       <section className='left'>
-        <img src={ph1} alt='' id='image1' onClick={initGirls} />
-        <span id='name1'>Govno Mocha</span>
+        <img src='' alt='' id='image1' onClick={initGirls} />
+        <span id='name1'></span>
       </section>
       <section className='right'>
-        <img src={ph1} alt='' id='image2' onClick={initGirls} />
-        <span id='name2'>Mocha Govno</span>
+        <img src='' alt='' id='image2' onClick={initGirls} />
+        <span id='name2'></span>
       </section>
     </div>
   );

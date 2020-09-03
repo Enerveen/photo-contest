@@ -6,13 +6,13 @@ const Nav = () => {
   return (
     <nav>
       <NavLink className='link' to='/'>
-        BATTLE
+        БИТВА
       </NavLink>
       <NavLink className='link' to='/scoreboard'>
-        SCOREBOARD
+        ТАБЛИЦА ЛИДЕРОВ
       </NavLink>
       <NavLink className='link' to='/info'>
-        INFORMATION
+        ИНФОРМАЦИЯ
       </NavLink>
     </nav>
   );
