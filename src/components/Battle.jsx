@@ -9,6 +9,9 @@ const Battle = () => {
       fetch(addr, { method: 'PATCH' });
     }
 
+    document.getElementById('image1').src = '';
+    document.getElementById('image2').src = '';
+
     fetch(process.env.REACT_APP_ADDR)
       .then((data) => data.json())
       .then((data) => round(data))
