@@ -6,6 +6,7 @@
   background-color: black;
   background-repeat: no-repeat;
   text-align: center;
+  margin-top: 6vh;
 }
 
 .info p {
@@ -14,18 +15,6 @@
 
 .info section {
   padding: 1vw 5vw 1vw 5vw;
-}
-
-.info .heading {
-  margin-top: 6vh;
-  width: 100%;
-  text-align: center;
-}
-
-.info .heading h1 {
-  margin: 0;
-  font-weight: bold;
-  font-size: 4em;
 }
 
 .heading span {
