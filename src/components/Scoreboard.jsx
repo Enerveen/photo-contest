@@ -41,6 +41,12 @@ export default class Scoreboard extends Component {
       return (
         <div className='scoreboard'>
           <h1>Топ-50</h1>
+          <div className='alert'>
+            <p>
+              По техническим причинам таблица лидеров заморожена в состоянии на 05.09.20 19:45. В скором времени работа возобновится,
+              приносим извинения за предоставленные неудобства.
+            </p>
+          </div>
           <main>
             {items.map((item, index) => (
               <ScoreElem key={index} i={index} prop={item} />
