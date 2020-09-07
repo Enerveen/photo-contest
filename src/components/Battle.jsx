@@ -7,8 +7,6 @@ const Battle = () => {
   function initGirls(event) {
     if (event) {
       let fetchData = event.target.id === 'image1' ? globalData[0].id : globalData[1].id;
-      console.log(globalData[0], globalData[1]);
-      console.log(fetchData);
       fetch(process.env.REACT_APP_ADDR, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
