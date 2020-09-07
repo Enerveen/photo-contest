@@ -5,13 +5,13 @@ import './nav.css';
 const Nav = () => {
   return (
     <nav>
-      <NavLink className='link' to='/'>
+      <NavLink className='link' to='/#/'>
         БИТВА
       </NavLink>
-      <NavLink className='link' to='/scoreboard'>
+      <NavLink className='link' to='/#/scoreboard'>
         ТАБЛИЦА ЛИДЕРОВ
       </NavLink>
-      <NavLink className='link' to='/info'>
+      <NavLink className='link' to='/#/info'>
         ИНФОРМАЦИЯ
       </NavLink>
     </nav>
