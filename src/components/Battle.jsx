@@ -2,11 +2,18 @@ import React, { useEffect } from 'react';
 import './battle.css';
 import vs from '../img/vs.png';
 const Battle = () => {
+  let globalData = [];
   useEffect(() => initGirls());
   function initGirls(event) {
     if (event) {
-      let addr = process.env.REACT_APP_ADDR + event.target.alt;
-      fetch(addr, { method: 'PATCH' });
+      let fetchData = event.target.id === 'image1' ? globalData[0].id : globalData[1].id;
+      console.log(globalData[0], globalData[1]);
+      console.log(fetchData);
+      fetch(process.env.REACT_APP_ADDR, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ personId: fetchData }),
+      });
     }
 
     document.getElementById('image1').src = '';
@@ -18,6 +25,7 @@ const Battle = () => {
       .catch((err) => console.error(err));
 
     function round(data) {
+      globalData = data;
       document.getElementById('image1').src = data[0].link;
       document.getElementById('image1').alt = data[0].fullName;
       document.getElementById('image2').src = data[1].link;
