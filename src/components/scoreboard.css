@@ -1,9 +1,9 @@
 .scoreboard {
   color: white;
-  margin: 0px;
+  margin-top: 7vh;
   box-sizing: border-box;
   font-family: 'Exo 2', sans-serif;
-  background-color: black;
+  background-color: #111;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -11,53 +11,54 @@
 }
 
 .scoreboard .alert {
-  font-size: 2.5vw;
-  color: black;
+  padding: 5px;
+  font-size: 32px;
+  color: #111;
   font-style: italic;
   background-color: #ca6fc8e8;
-  margin: 3vw 10vw 10vw 10vw;
-  padding: 2vw;
+  margin: 50px 150px 150px 150px;
   text-align: center;
   border-radius: 30px;
 }
 
 .scoreboard h1 {
-  margin-top: 6vh;
-  font-size: 5vw;
+  font-size: 80px;
+  margin: 0;
   font-weight: bold;
 }
 
 .scoreboard main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 70vw;
+  align-items: center;
+  width: 100%;
 }
 
 .score-elem {
   position: relative;
-  margin-bottom: 5vw;
-  font-size: 2vw;
-  width: 100%;
+  margin-bottom: 120px;
+  font-size: 30px;
+  width: 70vw;
 }
 
 .score-elem-meter {
-  border-radius: 1vw;
+  border-radius: 20px;
   font-weight: 400;
   background: linear-gradient(45deg, #a2c1d3, #e43cc3);
-  color: black;
+  color: #111;
   width: 70vw;
-  height: 3vw;
+  height: 50px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 1vw;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .score-elem img {
   position: absolute;
-  bottom: 1.5vw;
-  height: 7vw;
-  right: 5vw;
+  bottom: 20px;
+  height: 150px;
+  right: 100px;
   object-fit: contain;
 }
 
@@ -72,4 +73,43 @@
 
 .score-elem a:hover {
   color: #ca6fc9;
+}
+
+@media (max-width: 1000px) and (min-width: 701px) {
+  .score-elem {
+    margin-bottom: 70px;
+  }
+
+  .score-elem-meter {
+    justify-content: flex-start;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+
+  .score-elem img {
+    right: 0;
+    height: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .score-elem {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .score-elem img {
+    position: static;
+    border-radius: 20px;
+  }
+
+  .score-elem-meter {
+    margin-top: 5px;
+    height: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 5px 0;
+  }
 }

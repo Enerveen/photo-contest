@@ -5,14 +5,14 @@ const Battle = () => {
   let globalData = [];
   useEffect(() => initGirls());
   function initGirls(event) {
-    if (event) {
+    /*if (event) {
       let fetchData = event.target.id === 'image1' ? globalData[0].id : globalData[1].id;
       fetch(process.env.REACT_APP_ADDR, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ personId: fetchData }),
       });
-    }
+    } */
 
     document.getElementById('image1').src = '';
     document.getElementById('image2').src = '';
@@ -35,7 +35,7 @@ const Battle = () => {
 
   return (
     <div className='battle'>
-      <img src={vs} alt='' />
+      <img src={vs} alt='' className='vs' />
       <section className='left'>
         <img src='' alt='' id='image1' onClick={initGirls} />
         <span id='name1'></span>

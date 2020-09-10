@@ -9,11 +9,9 @@ const ScoreElem = ({ i, prop }) => {
           {prop.fullName.replace(/_/g, ' ')}
         </a>
       </span>
-      <div>
         <div className='score-elem-meter'>
           <span>{prop.score}</span>
-        </div>
-        <a href={prop.link} target='_blank' rel='noopener noreferrer'>
+          <a href={prop.link} target='_blank' rel='noopener noreferrer'>
           <img src={prop.link} alt='' />
         </a>
       </div>

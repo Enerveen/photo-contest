@@ -3,21 +3,27 @@
 }
 
 .battle {
-  margin-top: 5vh;
+  margin-top: 35px;
   display: flex;
   background: linear-gradient(45deg, #a2c1d3, #e43cc3);
   height: 95vh;
+  z-index: 2;
 }
 
-.battle > img {
+.vs {
   width: 15vw;
   height: 30vh;
   position: absolute;
   top: 60vh; /* t = 31.5 l = 42.5 */
   left: 41.5vw;
   opacity: 0.8;
-  pointer-events: none;
   z-index: 1;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.vs.invisible {
+  opacity: 0;
 }
 
 .battle section {
@@ -48,7 +54,7 @@
   font-size: 3vw;
   font-weight: 400;
   pointer-events: none;
-  z-index: 1;
+
   margin: 0 7.5vw 1vw 7.5vw;
 }
 

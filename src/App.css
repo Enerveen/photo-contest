@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   color: white;
   font-family: 'Exo 2', sans-serif;
-  background-color: black;
+  background-color: #111;
 }
 
 ::-webkit-scrollbar {
