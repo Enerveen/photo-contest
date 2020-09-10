@@ -11,6 +11,8 @@
 }
 
 .scoreboard .alert {
+  background: linear-gradient(180deg, #a2c1d3, #e43cc3);
+  box-shadow: 1px 1px 20px #a2c1d3;
   padding: 5px;
   font-size: 32px;
   color: #111;
@@ -60,6 +62,7 @@
   height: 150px;
   right: 100px;
   object-fit: contain;
+  box-shadow: 2px 2px 8px #111;
 }
 
 .score-elem > div {
@@ -101,9 +104,11 @@
   .score-elem img {
     position: static;
     border-radius: 20px;
+    box-shadow: none;
   }
 
   .score-elem-meter {
+    background: #111111;
     margin-top: 5px;
     height: 100%;
     height: auto;
@@ -111,5 +116,6 @@
     justify-content: center;
     align-items: center;
     padding: 15px 0 5px 0;
+    color: #ffffff;
   }
 }
