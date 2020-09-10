@@ -50,7 +50,7 @@
 .battle section span {
   position: absolute;
   top: 75%;
-  font-size: 48px;
+  font-size: 3vw;
   font-weight: 400;
   pointer-events: none;
   margin: 0 20px;
@@ -62,16 +62,4 @@
 
 .right {
   justify-content: flex-start;
-}
-
-@media (max-width: 700px) {
-  .battle section span {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 350px) {
-  .battle section span {
-    font-size: 18px;
-  }
 }
