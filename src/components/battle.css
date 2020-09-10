@@ -11,11 +11,10 @@
 }
 
 .vs {
-  width: 15vw;
-  height: 30vh;
+  width: 17vw;
   position: absolute;
-  top: 60vh; /* t = 31.5 l = 42.5 */
-  left: 41.5vw;
+  top: 40vh; /* t = 31.5 l = 42.5 */
+  left: 40.5vw;
   opacity: 0.8;
   z-index: 1;
   pointer-events: none;
@@ -51,11 +50,10 @@
 .battle section span {
   position: absolute;
   top: 80%;
-  font-size: 3vw;
+  font-size: 48px;
   font-weight: 400;
   pointer-events: none;
-
-  margin: 0 7.5vw 1vw 7.5vw;
+  margin: 0 20px;
 }
 
 .left {
@@ -64,4 +62,16 @@
 
 .right {
   justify-content: flex-start;
+}
+
+@media (max-width: 700px) {
+  .battle section span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 350px) {
+  .battle section span {
+    font-size: 18px;
+  }
 }
