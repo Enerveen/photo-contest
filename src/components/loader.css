@@ -1,15 +1,38 @@
-.lds-spinner {
+.battle .lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+}
+.battle .lds-spinner div {
+  transform-origin: 7.5vw 7.5vw;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.battle .lds-spinner div:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 5vw;
+  width: 1vw;
+  height: 3vw;
+  border-radius: 20%;
+  background: #fff;
+}
+
+.scoreboard .lds-spinner {
   color: official;
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
-.lds-spinner div {
+.scoreboard .lds-spinner div {
   transform-origin: 40px 40px;
   animation: lds-spinner 1.2s linear infinite;
 }
-.lds-spinner div:after {
+.scoreboard .lds-spinner div:after {
   content: ' ';
   display: block;
   position: absolute;
@@ -20,6 +43,7 @@
   border-radius: 20%;
   background: #fcf;
 }
+
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);
   animation-delay: -1.1s;
