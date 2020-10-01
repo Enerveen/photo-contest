@@ -8,4 +8,4 @@
 
 ## Preview
 
-[1](https://res.cloudinary.com/dnxmbqza4/image/upload/v1601554425/github%20projects/prtfl_eujxku.jpg)
+https://res.cloudinary.com/dnxmbqza4/image/upload/v1601554425/github%20projects/prtfl_eujxku.jpg
