@@ -10,19 +10,6 @@
   align-items: center;
 }
 
-.scoreboard .alert {
-  background: linear-gradient(180deg, #a2c1d3, #e43cc3);
-  box-shadow: 1px 1px 20px #a2c1d3;
-  padding: 5px;
-  font-size: 32px;
-  color: #111;
-  font-style: italic;
-  background-color: #ca6fc8e8;
-  margin: 50px 150px 150px 150px;
-  text-align: center;
-  border-radius: 30px;
-}
-
 .scoreboard h1 {
   font-size: 80px;
   margin: 0;
