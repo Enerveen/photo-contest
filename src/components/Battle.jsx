@@ -19,14 +19,14 @@ const Battle = () => {
   useEffect(() => initGirls(), []);
   function initGirls(event) {
     setLoading(true);
-    /*if (event) {
+    if (event) {
       let fetchData = event.target.id === 'image1' ? battle[0].id : battle[1].id;
       fetch(process.env.REACT_APP_ADDR, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ personId: fetchData }),
       });
-    } */
+    }
 
     setBattle([
       {

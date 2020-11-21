@@ -7,7 +7,7 @@ function Scoreboard() {
   const [scElems, setScElems] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   useEffect(() => {
-    fetch(process.env.REACT_APP_ADDR + '/score')
+    fetch(process.env.REACT_APP_ADDR + 'score')
       .then((res) => res.json())
       .then((res) => {
         setScElems(res);
